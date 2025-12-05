@@ -1,6 +1,9 @@
 import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { UserProfile, ChatMessage, AIResponseData, FoodLogEntry } from "../types";
 
+// Declare process for client-side TS check (Vite replaces this during build)
+declare const process: { env: { API_KEY: string } };
+
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 // We define the schema for the AI's response to ensure we get structured data for the app
