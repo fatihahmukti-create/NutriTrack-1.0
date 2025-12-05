@@ -1,0 +1,7 @@
+{
+  "name": "NutriTrack AI",
+  "description": "AI-powered smart nutrition tracker with chat-based logging and personalized insights.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
